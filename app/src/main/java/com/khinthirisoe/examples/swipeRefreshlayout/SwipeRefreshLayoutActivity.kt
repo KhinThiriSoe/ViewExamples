@@ -1,4 +1,4 @@
-package com.khinthirisoe.examples
+package com.khinthirisoe.examples.swipeRefreshlayout
 
 import android.os.Bundle
 import android.widget.Toast
@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+import com.khinthirisoe.examples.R
 
 class SwipeRefreshLayoutActivity : AppCompatActivity() {
 
@@ -26,14 +27,20 @@ class SwipeRefreshLayoutActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
 
         val blogs = ArrayList<Blog>()
-        val adapter = CustomAdapter(blogs)
+        val adapter =
+            CustomAdapter(blogs)
 
         recyclerView.adapter = adapter;
         swipeRefreshLayout.setOnRefreshListener {
 
             swipeCount += 1;
             if (swipeCount > 0) {
-                blogs.add(Blog("Blog Title $swipeCount", "Description : Blog description goes here"))
+                blogs.add(
+                    Blog(
+                        "Blog Title $swipeCount",
+                        "Description : Blog description goes here"
+                    )
+                )
                 Toast.makeText(this, "Swipe called", Toast.LENGTH_SHORT).show()
             }
             adapter.notifyDataSetChanged()
