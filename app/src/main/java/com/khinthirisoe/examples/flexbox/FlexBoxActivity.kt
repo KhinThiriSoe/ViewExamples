@@ -17,6 +17,8 @@ class FlexBoxActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_flex_box)
 
+        ThemeHelper.applyTheme(ThemeHelper.darkMode)
+
         button.setOnClickListener {
             editText.text.isNullOrBlank().apply {
                 when {
