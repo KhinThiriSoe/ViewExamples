@@ -17,4 +17,19 @@
         <item name="android:backgroundDimEnabled">false</item>
     </style>
 
+    <style name="MaterialAppTheme" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">#0336ff</item>
+        <item name="colorOnPrimary">#ffffff</item>
+        <item name="colorPrimaryVariant">#0035c9</item>
+        <item name="colorSecondary">#ffde03</item>
+        <item name="colorOnSecondary">#000000</item>
+        <item name="colorSecondaryVariant">#ffc000</item>
+        <item name="colorSurface">#ffffff</item>
+        <item name="colorOnSurface">#000000</item>
+        <item name="colorError">#b00020</item>
+        <item name="colorOnError">#FFFFFF</item>
+        <item name="android:colorBackground">@android:color/holo_red_light</item>
+        <item name="colorOnBackground">#212121</item>
+    </style>
+
 </resources>
