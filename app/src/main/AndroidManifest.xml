@@ -9,6 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".customfonts.CustomFontsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".bottomsheet.BottomSheetActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,10 +25,9 @@
         </activity>
         <activity
             android:name=".transparent.TransparentActivity"
-            android:theme="@style/Theme.AppCompat.Transparent.NoActionBar"></activity>
-        <activity android:name=".flexbox.FlexBoxActivity">
-        </activity>
-        <activity android:name=".viewpager.ViewPagerActivity"></activity>
+            android:theme="@style/Theme.AppCompat.Transparent.NoActionBar" />
+        <activity android:name=".flexbox.FlexBoxActivity"></activity>
+        <activity android:name=".viewpager.ViewPagerActivity" />
         <activity android:name=".swipeRefreshlayout.SwipeRefreshLayoutActivity" />
     </application>
 
