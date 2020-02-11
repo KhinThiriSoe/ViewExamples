@@ -23,7 +23,7 @@
         android:id="@+id/downloadableFontTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/opensans"
+        android:fontFamily="@font/lato"
         android:text="Downloadable font!"
         android:textColor="#000"
         app:layout_constraintBottom_toBottomOf="parent"
