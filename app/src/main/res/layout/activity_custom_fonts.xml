@@ -7,14 +7,28 @@
     tools:context=".customfonts.CustomFontsActivity">
 
     <TextView
+        android:id="@+id/customFontTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/my_custom_font"
+        android:fontFamily="@font/opensans"
         android:text="Hello World!"
+        android:textStyle="italic"
+        android:textColor="#000"
+        app:layout_constraintBottom_toTopOf="@id/downloadableFontTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/downloadableFontTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensans"
+        android:text="Downloadable font!"
         android:textColor="#000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/customFontTextView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

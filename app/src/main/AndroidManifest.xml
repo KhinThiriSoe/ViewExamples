@@ -29,6 +29,10 @@
         <activity android:name=".flexbox.FlexBoxActivity"></activity>
         <activity android:name=".viewpager.ViewPagerActivity" />
         <activity android:name=".swipeRefreshlayout.SwipeRefreshLayoutActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
